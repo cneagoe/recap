@@ -1,5 +1,5 @@
 node {
     stage('Example') {
-        print(env.dump())
+        sh "printenv"
     }
 }
