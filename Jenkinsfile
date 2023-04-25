@@ -1,8 +1,9 @@
 node {
-    checkout scm
+    stage('checkout'){
+        def scmVars = checkout scm
+        scmVars.dump()
+    }
     stage('Example') {
         sh "printenv"
-        sh "echo git_commit"
-        sh "echo $GIT_COMMIT"
     }
 }
