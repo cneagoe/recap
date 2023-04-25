@@ -1,9 +1,7 @@
 node {
     stage('Example') {
-        if (env.BRANCH_NAME == 'master') {
-            echo 'I only execute on the master branch'
-        } else {
-            echo 'I execute elsewhere'
-        }
+        print(env.BUILD_NUMBER)
+        print(env.BUILD_ID)
+        print(env.JOB_NAME)
     }
 }
