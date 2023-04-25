@@ -1,4 +1,5 @@
 node {
+    checkout scm
     stage('Example') {
         sh "printenv"
         sh "echo git_commit"
