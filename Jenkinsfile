@@ -5,6 +5,6 @@ node {
         print(scmVars.dump())
     }
     stage('Example') {
-        sh "printenv"
+        sh "printenv" 
     }
 }
